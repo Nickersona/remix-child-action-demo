@@ -12,27 +12,15 @@ npm run dev
 
 This starts your app in development mode, rebuilding assets on file changes.
 
-## Deployment
+## Test case
+1. Navigate to localhost:3000/parent/child
+2. Submit the form with some data
+3. Open the console to observer the logs outputting from useActionData
 
-First, build your app for production:
 
-```sh
-npm run build
-```
+### UI:
+![Figure 1](./action-data-ui.png)
 
-Then run the app in production mode:
+### Logs:
+![Figure 1](./action-data-log.png)
 
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
